@@ -1,0 +1,28 @@
+<!-- ease-in-function/ -->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      @keyframes superSexyCoinFlip {
+        /* 어느 한 지점에서부터 한 지점까지 애니메이션 만들것임. */
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(360deg) translateX(100px);
+        }
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: superSexyCoinFlip 5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="C:/Users/김근영/Desktop/1학년 2학기/CodeCure/kokoa-clone/2주차/logo.jpg"
+    />;
+  </body>
+</html>

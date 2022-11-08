@@ -1,0 +1,31 @@
+<!-- ease-in-function/ -->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: transform 1s ease-in-out;
+        /* rotateY: y축방향으로 찌그러뜨려 
+        transform: rotateY(30deg) rotateX(20deg);
+        그리고 text와 같이 써보면 알 수 있듯이
+        img는 inline이라 일직선상에 놓인다.
+        transformaiton은 다른 box element, 이미지 등에 영향을 끼치지 않아
+        text와 같이 쓰게 되어도 위치가 겹치면 그냥 포개어짐
+        
+        transform skew(angle) : 그냥 비스듬히 기울이기*/
+      }
+      img:hover {
+        transform: matrix(1, 2, 3, 4, 5, 6);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="C:/Users/김근영/Desktop/1학년 2학기/CodeCure/kokoa-clone/2주차/logo.jpg"
+    />;
+    <span>hahahhahahahaa</span>
+  </body>
+</html>

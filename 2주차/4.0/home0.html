@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      a {
+        color: white;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: background-color 1s;
+        /* transition은 hover가 아니라 버튼에 해야함. */
+      }
+      /* transition: 어떤 상태에서 다른 상태로 가는 변화를 애니메이션화 하는 것임
+      애니메이션화 : fade in fadeout 느낌
+      transition all 은 a에 해당되는 모든 걸 바꿔버림(color, background-color)*/
+      a:hover {
+        border-radius: 20px;
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+  </body>
+</html>
