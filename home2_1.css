@@ -1,0 +1,10 @@
+/* CSS는 HTML 태그를 가리키는 일을 함
+ex) 이 태그는 초록색이다
+이때 가리키는 것 자체를selector이라 한다 
+selector : 태그 속성
+  ㄴ한마디로 HTML의 어떤 태그를 가리키고, CSS로 잡아오면 selector안에 우리가 원하는 뭐든 작성할 수 있다. 
+속성이란 블루타이틀은 25px이며, 파란색이다. 뭐 이런거*/
+blueTitle {
+    makecolorblue
+    24pxfontsize
+}

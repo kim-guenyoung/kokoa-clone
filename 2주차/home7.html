@@ -1,0 +1,51 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      span {
+        /* inline요소에도 padding이 적용되는구나 
+        inline은 높이와 너비가 없어서 margin값을 가질 수 없어서 위아래에 여백이 안 생기는 것
+        padding은 가능하나, margin, border 안 됨. */
+        /* 그래서 만약 실전에서 위아래에 margin을 적용시키고 싶다면
+        inline 요소를 block으로 display시켜주어야한다. */
+        background-color: teal;
+        padding: 20px;
+        margin: 30px;
+      }
+        .button{
+            padding : 5px 10px;
+            border-radius : 10px;
+        }
+        .tomato {
+            background-color: tomato;
+            color : white;
+ 
+        }
+        .teal {
+            background-color: teal;
+            color : white;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- id는 한 번 밖에 사용할 수 없지만, class의 경우 여러 요소들에서 사용할 수 있다
+    그래서 span 비효율적으로 id = "tomato1, 2, 3"이런식으로 작성하는 대신 class를 이용해보자
+    id의 경우 #이었다면, class는 .으로 정의(.class명
+    #tomato = id = "tomato"
+    .tomato = class = "tomato" -->
+    <span class = "button teal">hello</span>
+    <span class ="button tomato">hello</span>
+    <span class = "button teal">hello</span>
+    <span class = "button tomato">hello</span>
+    <span class = "button teal">hello</span>
+    <span class  = "button tomato">hello</span>
+    <span class = "button teal">hello</span>
+</html>

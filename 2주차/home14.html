@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div p span {
+        /* p안의 span
+        부모 먼저 자식 다음 */
+        color: teal;
+      }
+      div > span {
+        /* >이건 바로 밑 자식만 해당됨. */
+        text-decoration: underline;
+      }
+      p + span {
+        /* p안에 있는 게 아니라 p 다음으로 오는 span을 찾는 거임 */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor sit amet.
+        <span>inside</span>
+      </p>
+    </div>
+  </body>
+</html>

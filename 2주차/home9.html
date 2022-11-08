@@ -1,0 +1,38 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height : 100vh;
+        /* viewport height(screen height) */
+        margin: 20px;
+        display: flex;
+        justify-content : space-evenly;
+        /*justify-content는 주축(수평축)에만 적용되고
+        align-items는 교차축(수직축)에만 적용된다.*/
+        align-items : stretch;
+        /* stretch : div를 늘어나게 하는데 div에서 height를 지정해주었으니 변화가 없음
+        div에 height를 지우면 상관X */
+      }
+      /* flexbox : 자식 element에 얘기하지 않고 부모 element에만 얘기한다. */
+      div {
+        width : 300px;
+        height : 300px;
+        background-color: teal;
+      }
+      #second {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <!-- 여기서는 body가 div의 부모element다. -->
+  <body>
+   <div></div>
+   <div id = "second"></div>
+   <div></div>
+</html>

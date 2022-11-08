@@ -1,0 +1,44 @@
+<!-- block만 가지고 있는 특징(inline은 가지고 있지 않음) -->
+<!-- html에서 div가 box의 기능을 하듯 : css도 그런 기능이 있음. -->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      /* div는 block요소 */
+      html {
+        background-color: tomato;
+      }
+
+      div {
+        /* collapsing margins 현상은 상하에서만 일어남
+        border이 바깥쪽 border과 같다면 이 두 margin은 하나로 취급된다. */
+        margin-left: 50px;
+        height: 150px;
+        width: 150px;
+        background-color: whitesmoke;
+        /* 만약 어떤 요소가 inline이라면 그 요소는 높이와 너비를 가질 수 없다. inline은 높이와 너비를 갖지 않는다.
+        block은 있음 */
+        display: inline;
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+      }
+      body {
+        /* 방향 없이 적용하면 상하좌우 모두 적용됨.
+        만약 margin값을 2개 주면 앞의 것은 위,아래에 해당되고, 두번째꺼는 좌우에 해당됨
+        4개면 상우하좌(12시부터 시계방향)*/
+        margin-top: 20px 5px 12px 99px;
+        background-color: thistle;
+      }
+
+      /* block은 inline으로 inline은 block으로 바꿀 수도 있음 */
+      span {
+        /* 기본적으로 span의 display 속성은 inline이다. */
+        display: block;
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

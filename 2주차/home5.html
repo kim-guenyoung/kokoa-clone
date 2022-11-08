@@ -1,0 +1,60 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        padding: 10px;
+      }
+      #first {
+        background-color: red;
+        height: 150px;
+        width: 150px;
+        /* (# : id를 의미)이게 딱 div의 첫번째 요소만 가리키고 싶을 떄 사용 */
+      }
+      #second {
+        background-color: orange;
+        height: 100px;
+        width: 100px;
+      }
+      #third {
+        background-color: green;
+        height: 50px;
+        width: 50px;
+      }
+      #fourth {
+        background-color: blue;
+        height: 25px;
+        width: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+margin > border > padding
+div안에 div안에 div안에 div가 있을 때 각각의 div에
+색을 다르게 하고 싶으면 id를 이용한다.
+id는 고유의 값이므로, 한 요소에 1개만 사용할 수 있고
+#을 써서 id이름을 붙이면 된다. -->

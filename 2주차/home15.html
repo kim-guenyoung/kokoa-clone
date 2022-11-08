@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div p span {
+        /* 부모 자식 간 관계 */
+        color: teal;
+      }
+      div > span {
+        /* 부모와 바로 밑 자식 간 관계 */
+        text-decoration: underline;
+      }
+      p + span {
+        /* 형제와 바로 뒤에 오는 형제의 관계 */
+        text-decoration: underline;
+      }
+      p ~ span {
+        /* 형제와 형제 간 관계(꼭 바로 뒤에 오지 않아도 됨.) */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        <address>hi</address>
+        <span>hello</span>
+      </p>
+    </div>
+  </body>
+</html>

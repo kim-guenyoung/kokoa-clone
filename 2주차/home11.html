@@ -1,0 +1,37 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height : 1000vh;
+        margin: 20px;
+      }
+      div {
+        width : 300px;
+        height : 300px;
+        color : white;
+        background-color: teal;
+      }
+      #green {
+        /*fixed를 사용하면 레이어를 부수고 다른 레이어에 위치할 수 있음)*/
+        position: fixed;
+        opacity : 0.2;
+      }
+      #different {
+        /*여기서 top, bottom, left, right 중 하나만 지정해도 이것이 위에 있는 것보다 맨 앞으로 옴
+        margin이든 block이든 서로 다른 레이어
+        이전에는 같은 레이어라 서로 접촉하고 있었다면 이제는 X*/
+      
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+   <div id = "green"></div>
+   <div id = "different"></div>
+</html>

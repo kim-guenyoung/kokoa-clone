@@ -1,0 +1,54 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      /* *는 everything을 의미 */
+      * {
+        border: 2px dashed black;
+      }
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        padding: 20px;
+      }
+      #first {
+        background-color: red;
+        height: 150px;
+        width: 150px;
+        /* (# : id를 의미)이게 딱 div의 첫번째 요소만 가리키고 싶을 떄 사용 */
+      }
+      #second {
+        background-color: orange;
+        height: 100px;
+        width: 100px;
+      }
+      #third {
+        background-color: green;
+        height: 50px;
+        width: 50px;
+      }
+      span {
+        border-style: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third"></div>
+        <span>hello</span>
+      </div>
+    </div>
+  </body>
+</html>

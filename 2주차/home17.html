@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        /* active hover 를 동시에 쓰면 아래에 있는 것이 작동된다. 
+        hover이랑 active를 동시에 실행할 수는 없나 button:hover { */
+        /* 버튼에 마우스를 가져다 대었을때 */
+        background-color: blue;
+      }
+      button:active {
+        /* 버튼 클릭했을때 */
+        background-color: tomato;
+      }
+      /* input:focus {
+        background-color: pink;
+      } */
+      a:visited {
+        color: orange;
+        /*검색창을 구현한 다음에 방문한 기록을 표시해줄 때 사용해보자*/
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise;
+      }
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      /*form:hover input:focus {
+        background-color: sienna;
+      }*/
+      /* form:focus-within {
+        border-color: seagreen;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <form>
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form> -->
+    <div>
+      <button>Hello</button>
+      <input type="text" />
+      <input type="text" />
+      <a href="https://apple.com">Go To apple</a>
+    </div>
+  </body>
+</html>

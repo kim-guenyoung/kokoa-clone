@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      input::placeholder {
+        color: yellowgreen;
+      }
+      p::selection {
+        background-color: skyblue;
+        /* 그러면 블록으로 끌어올 때 이걸 사용하는건가? 
+        이건 아니네
+        padding도 될까? 안됨*/
+      }
+      p::first-line {
+        font-size: 50px;
+        background-color: yellow;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <form>
+      <!-- $= ending
+        ^=start
+        ~=include -->
+      <input type="text" placeholder="Name" />
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
+  </body>
+</html>

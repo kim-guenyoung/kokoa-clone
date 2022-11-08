@@ -1,0 +1,8 @@
+/*CSS는 cascading(계단식)이므로 위에서부터 아래로 순차적으로 적용되어
+body에 앞에서 언급했던 html에 있는 글자색 color : yellowgreen을 하고
+css에서 다시 color : tomato라고 해주어도, 가리움효과
+따라서 마지막에 있는 게 업데이트되는 거임.(마지막으로 변경된 게)
+근데 만약 css랑 연결지어주는 하이퍼링크를 아래로 내려주면 tomato가 이김*/
+head {
+    background-color: tomato;
+}

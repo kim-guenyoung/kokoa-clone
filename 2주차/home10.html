@@ -1,0 +1,47 @@
+<!-- padding은 margin과 반대개념이다
+margin의 뜻은 box의 경계로부터 바깥에 있는 공간이었다면
+padding은 안에 있는 공간을 의미한다 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      body {
+        height : 100vh;
+        margin: 20px;
+        display: flex;
+        justify-content : space-between;
+        align-items : center;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        
+        /*flex-wrap : nowrap ->모든 요소를 같은 줄에 있게 만들어줌 */
+        /*만약 flex-direction이 column에 있다면 주축에 적용되는 justify-content가 수직으로 적용됨.*/
+        
+      }
+      div {
+        /*body가 flex 컨테이너인데, div는 body가 움직이라는대로 움직이지만
+        숫자를 가진 div를 flex 컨테이너로 만들 수 있고
+        flex부모-자식 element를 만들 수 있다.
+        그럼 이제 여기서도 justify-content : center, align-items를 사용할 수 있는 것이다.*/
+
+        display:flex;
+        justify-content: center;
+        align-items : center;
+        width : 300px;
+        height : 300px;
+        font-size: 50px;
+        color : red;
+        background-color: teal;
+      }
+      #second {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+   <div>1</div>
+   <div id = "second">2</div>
+   <div>3</div>
+</html>

@@ -1,0 +1,35 @@
+<!-- html에서 div가 box의 기능을 하듯 : css도 그런 기능이 있음. -->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>니코타임즈</title>
+    <style>
+      /* 이 div는 아래에 나오는 3개의 div 모두에 해당된다. */
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+      }
+      span {
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <a href="#">link</a>
+    <span>hello</span>
+    <!-- 보면 알 수 있듯이 span이나 link는 박스처리가 안된다. 
+    inline이란 같은 줄에 있을 수 있냐
+    img, span, link 등 : inline요소
+    그리고 block이란 옆에 아무것도 올 수 없다는 것을 의미한다-->
+    <p>Lorem ipsum dolor sit amet</p>
+    <img src="logo.jpg" />
+    <span>hello</span>
+  </body>
+</html>
