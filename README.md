@@ -1,3 +1,3 @@
 #Kokoa Clone 2022 Update
 
-CSS got so much better!
+2022-2학기 <코코아 클론> 클론코딩
