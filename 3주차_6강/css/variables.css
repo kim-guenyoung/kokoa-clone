@@ -1,0 +1,6 @@
+:root {
+    --yellow: #fae100;
+    --horizontal-space: 25px;
+    /*이렇게 하면 앞으로 var(--horiziontal-space)사용할 수 있음.*/
+    --main-border: 1px solid rgba(0, 0, 0, 0.3);
+}

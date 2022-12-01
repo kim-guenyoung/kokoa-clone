@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- To Do : Wifi Icon -->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!--Time Icon-->
+      </div>
+      <div class="status-bar__column">
+        <span>98%</span>
+        <span style="color: rgb(243, 208, 32)"
+          ><i class="fa-solid fa-battery-full fa-2x"></i
+        ></span>
+        <i class="fa-solid fa-bolt"></i>
+        <!-- Battery Icon
+            Lightning Icon -->
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+    <!-- POST : 백엔드 서버에 정보를 전송하는 방식인데 서버가 없으니까 GET방식은 보안을 사용하는데
+GET은 보안에 취약하기 때문에 usernmae, password같은 거를 넘겨줘서는 절대로 안된다.
+url에 포함되어도 상관없는 내용만 GET방식으로 보내야함. -->
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big.</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a64a476daf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

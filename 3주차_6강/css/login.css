@@ -1,0 +1,77 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    /*flex-direction : 양옆으로 있는 거 아니고 밑으로 내려줌*/
+    align-items: center;
+}
+
+.welcome-header__title{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.welcome-header__text{
+    width : 60%;
+    opacity : 0.7;
+}
+
+
+/*
+.login-form__input{
+}
+#login-form input:not([type= "submit"])
+.login-form__btn{
+}
+.login-form__a{
+}
+두 개 같은 뜻
+
+*/
+
+
+/*input 마다 display: block을 설정해줄 수 있지만 번거로움 -> class 만들기*/
+
+#login-form{
+    display :flex;
+    flex-direction: column;
+    margin : 0px 30px;
+}
+
+#login-form input {
+    border : none;
+    padding : 15px 0px;
+    font-size : 18px;
+    margin-bottom : 25px;
+    
+}
+/*로그인 창은 노란색으로 바뀌지 않기를 원함*/
+#login-form input:not([type= "submit"]){
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition:border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder{
+    color : rgba(0, 0, 0, 0.4)
+}
+
+#login-form input:focus{
+    border-color: var(--yellow);
+}
+
+#login-form input[type = "submit"]{
+    background-color:var(--yellow);
+    cursor: pointer;
+    padding : 20px 0px;
+    border-radius : 5px;
+    /*border-radius : 둥근 사각형(로그인 버튼)*/
+}
+
+/*login : find kokoa account or password*/
+#login-form a{
+    text-align:center;
+    text-decoration: none;
+    color:inherit;
+    font-size: 13px;
+    /*a(anchor)이 부모 색깔 상속받기*/
+}

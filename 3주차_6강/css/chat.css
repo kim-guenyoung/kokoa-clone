@@ -1,0 +1,205 @@
+#chat-screen{
+    background-color: #bacee0;
+    height : 500vh;
+}
+
+#chat-screen .status-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #bacee0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+#chat-screen .alt-header{
+    top : 25px;
+    position: fixed;
+    background-color: #bacee0;
+    width : 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@keyframes fadein{
+    from{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes fadein{
+    from{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+.main-chat:nth-child(3){
+    /*padding-top으로 가게되면 상단바가 고정되어있어서 글자가 겹쳐 나옴.*/
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadein 0.8s linear;
+}
+.main-chat:nth-child(4){
+    /*padding-top으로 가게되면 상단바가 고정되어있어서 글자가 겹쳐 나옴.*/
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s linear;
+}
+.chat__timestamp{
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row{
+    width : 100%;
+    display : flex;
+    margin-bottom : 25px;
+} 
+.message-row img{
+    width : 50px;
+    height : 50px;
+    border-radius : 50%;
+    margin-right: 10px;
+}
+
+.message__author{
+    opacity: 0.8;
+    font-size : 13px;
+    margin-bottom : 8px;
+    display: block;
+}
+.message__info{
+    display: flex;
+    align-items: flex-end;
+}
+.message__bubble{
+    background-color:white;
+    padding :13px; 
+    border-radius : 18px;
+    border-top-left-radius: 0px;
+    margin-right : 5px;
+}
+
+.message__time{
+    opacity: 0.8;
+    font-size : 13px;
+}
+
+.message-row--own{
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble{
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+
+.message-row--own .message__info{
+    flex-direction: row-reverse;
+}
+
+/* .message-row--own .message__bubble{
+    order: 1;
+    order : 는 flex children만 됨.
+    이는 순서를 바꾸어줌 시간과 채팅창 순서
+}
+    
+.message-row--own .message__time{
+    order: 0;
+} */
+
+.reply{
+    position:fixed;
+    bottom: 0;
+    width : 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding : 5px 25px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply .reply__column:first-child{
+    width : 10%;
+}
+.reply .reply__column:last-child{
+    width : 90%;
+    position: relative;
+} 
+.reply i{
+    opacity : 0.5;
+}
+
+.reply input{
+    padding:12px;
+    width : 100%;
+    border:var(--main-border);
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button{
+    position: absolute;
+    right : 3px;
+    top: 5px;    
+}
+.reply__column:last-child > i{
+    right: 50px;
+    top: 20px;
+}
+.reply__column button{
+    background-color: var(--yellow);
+    border: none;
+    width: 30px;
+    height : 30px;
+    border-radius: 50%;
+} 
+.reply__column button i{
+    opacity : 1;
+}
+.reply__column button:focus,
+.reply__column button:active{
+    outline:none;
+}
+
+.reply .reply__column:fist-child,
+.reply .fa-face-smile-wink,
+.reply button{
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile-wink,
+.reply:focus-within button {
+    opacity : 0;
+}
+.reply input:focus{
+    width: 98vw;
+    transform: translateX(-12%) translateY(-80px);
+}
+
+.reply:focus-within{
+    transform: translateY(80px);
+}
